@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço de Redes</title>
+</head>
+<body class="cabecalh0">
+    <h1>Serviço de Redes</h1>
+    <ul>
+        <a class="button" href="#osi">MODELO OSI</a>
+        <a class="button" href="#tcp">MODELO TCP/IP</a>
+        <a class="button" href="#udp">UDP</a>
+        <a class="button" href="#ftp">FTP</a>
+        <a class="button" href="#dns">DNS</a>
+        <a class="button" href="#dhcp">DHCP</a>
+       <a class="button" href="#http">HTTP/HTTPS</a>
+       <a class="button" href="#web">WEBSERVER</a>
+       <a class="button" href="#eu">O QUE EU APRENDI</a>
+</ul>
+<section id="osi"></section>
+<h2>MODELO OSI</h2>
+<p>O modelo de interconexão de sistemas abertos (OSI) é um modelo conceitual criado pela Organização Internacional de Normalização que permite que diversos sistemas de comunicação se comuniquem usando protocolos padronizados. Em poucas palavras, o OSI fornece um padrão para que diferentes sistemas de computadores possam se comunicar.</p>
+<p>O modelo OSI pode ser considerado a linguagem universal da rede de computadores. Ele se baseia no conceito de dividir um sistema de comunicação em sete camadas abstratas, empilhadas umas sobre as outras.</p>
+<p>Cada camada do modelo OSI lida com uma tarefa específica e se comunica com as camadas acima e abaixo dela. Os ataques de DDoS são direcionados a camadas específicas de uma conexão de Rede: os ataques na camada de aplicação são direcionados à camada 7 e os ataques na camada de protocolo são direcionados às camadas 3 e 4.</p>
+<p>São elas as camadas:</p>
+<li>7-Camada de aplicação;</li>
+<li>6-Camada de apresentação;</li>
+<li>5-Camada de sessão;</li>
+<li>4-Camada de transporte;</li>
+<li>3-Camada de rede;</li>
+<li>2-Camada de enlace de dados;</li>
+<li>1-Camada física.</li>
+<div class="img">
+<img height="250px" width="500px" src="osi.png"></div>
+
+<section id="tcp"></section>
+<h2>MODELO TCP/IP</h2>
+<p>Quando falamos de TCP, nos referimos a algo que faz toda a definição de como aplicações conseguem criar canais de comunicação através da rede. Também auxilia na quebra em pedaços de uma mensagem que será posteriormente reconstruída antes de chegar a seu destino.</p>
+<p>Uma boa analogia é compará-lo a alguém que recebe as peças e, em seguida, monta o quebra-cabeça por completo.</p>
+<p>Já o IP é o que define o endereço e o caminho do pacote de dados, ou seja, ele garante que as informações cheguem a seu destino correto. Ele é basicamente o “carteiro”, que recebe o item e o checa para ter certeza de que estará no local de seu objetivo.</p>
+<p>Tudo isso a partir do endereço IP (IP address).</p>
+<p>Sendo assim, é correto afirmar que TCP/IP é um conjunto de protocolos e um modelo de comunicação de rede. Ele serve para, principalmente, viabilizar a troca de informações entre ORIGEM e DESTINO.</p>
+<div class="img">
+    <img height="300px" width="350px" src="modelo-TCP-IP.png"></div>
+
+<section id="udp"></section>
+<h2>UDP</h2>
+<p>O Protocolo UDP é um protocolo de comunicação utilizado em toda a internet para transmissões com validade especialmente limitada, tais como reproduções de vídeo ou pesquisas no DNS. Ele acelera as comunicações ao não estabelecer formalmente uma conexão antes que os dados sejam transferidos. Isso permite que os dados sejam transferidos muito rapidamente, mas também pode fazer com que pacotes se percam em trânsito além de criar oportunidades de exploração na forma de ataques DDoS.</p>
+<p>Como todos os protocolos de rede, o UDP é um método padronizado de transferência de dados entre dois computadores de uma rede. Em comparação com outros protocolos, o UDP realiza este processo de forma simples: envia pacotes (unidades de transmissão de dados) diretamente para um computador de destino, sem estabelecer uma conexão antes, indicando a ordem desses pacotes ou verificando se eles chegaram como previsto. (Os pacotes UDP são denominados "datagramas").</p>
+<p>O UDP é mais rápido, mas menos confiável que o TCP, outro protocolo de transporte comum. Em uma comunicação TCP, os dois computadores começam estabelecendo uma conexão por meio de um processo automatizado chamado "handshake". Somente depois que esse handshake for concluído, um computador realmente transferirá pacotes de dados para o outro.</p>
+<p>As comunicações UDP não passam por esse processo. Em vez disso, um computador pode simplesmente começar a enviar dados para o outro.</p>
+
+<section id="ftp"></section>
+<h2>FTP</h2>
+<p>O FTP (File Transfer Protocol) ou Protocolo de Transferência de Arquivos, em português, é um protocolo usado para transferir arquivos por uma rede de computadores, desde uma local à internet. Basicamente, permite a troca de arquivos entre dois computadores de modo direto, em que um ganha acesso às pastas do outro.</p>
+<p>O protocolo é o meio mais antigo de transferir dados entre computadores de uma rede, tendo surgido em 1971 e usa o modelo cliente/servidor, onde o primeiro faz o acesso aos dados e o segundo os armazena.</p>
+<p>O armazenamento de dados na nuvem é outro modelo cliente/servidor assim como o FTP, com a diferença que os dados não ficam armazenados em um único computador.</p>
+
+<section id="dns"></section>
+<h2>DNS</h2>
+<p>Os servidores DNS (Domain Name System, ou Sistema de Nomes de Domínios) são os responsáveis por localizar e traduzir para números IP (Internet Protocol) os endereços dos sites que digitamos nos navegadores — como www.canaltech.com.br, por exemplo.</p>
+<p>magine ter que acessar seus sites preferidos através de números de IP, memorizando sequências de números para cada um deles? Isso seria algo completamente inviável, já que seria quase o mesmo que tentar memorizar todos os números de telefone da sua lista telefônica.</p>
+<p>Para isso existem os registros de domínios e os servidores de DNS espalhados pelo mundo com a simples função de traduzir o que é digitado na barra de endereços. Assim, ele é capaz de entender que a URL específica só vai acessar um único endereço IP através dos bancos de dados.</p>
+
+<section id="dhcp"></section>
+<h2>DHCP</h2>
+<p>O protocolo de configuração dinâmica de host, ou simplesmente DHCP, é o nome de um servidor TCP/IP que oferece serviços de configuração dinâmica em redes. Sem que o usuário perceba, ao se conectar em uma rede, esse serviço fornece automaticamente endereço IP, máscara de sub-rede, Gateway Padrão, endereço IP de um ou mais servidores DNS/WINS e sufixos de pesquisa do DNS, para que o dispositivo do usuário possa utilizar a rede e obter acesso aos recursos disponibilizados nela e acesso à internet, se houver.</p>
+<p>O protocolo DHCP tem configuração abrangente e pode trabalhar de três modos: automática, dinâmica e manual.</p>
+<h2>1.Modo Automático:</h2>
+<p>É o mais simples e possibilita administrar um grande parque de máquinas na rede sem muitas complicações, já que destina uma grande quantidade de endereços de IP de mesma faixa para ser utilizada na rede em questão.</p>
+<h2>2.Modo Dinâmico:</h2>
+<p>Já o modo dinâmico é idêntico ao automático, exceto pelo fato dele determinar o tempo que dispositivo terá acesso a rede de acordo com as necessidades do administrador.</p>
+<h2>3.Modo Manual</h2>
+<p>Por fim, o modo manual permite alocar um endereço IP atrelado ao MAC (Medium Access Control) de cada placa de rede, forçando cada computador a utilizar apenas o endereço IP configurado. Este recurso é bastante útil quando uma máquina possua um endereço IP fixo ou o administrador precisa ter um controle maior sobre determinados endereço e máquinas da rede.</p>
+
+<section id="http"></section>
+<h2>HTTP/HTTPS</h2>
+<p>O protocolo de transferência de hipertexto (HTTP – HyperText Transfer Protocol) é o protocolo padrão para a web. Por meio dele os navegadores requisitam as páginas da web e as recebem. Dessa forma, o HTTP define, entre outras formalidades, como são requisitadas as páginas da web, como são enviados os dados que o usuário insere em formulários e como o servidor envia mensagens de erro para o navegador do usuário.</p>
+<p>No entanto, como o HTTP é um protocolo baseado em texto, os dados do usuário e do servidor podem ser interceptados ou alterados no meio do caminho. Nesse contexto, um usuário na rede pode interceptar os seus dados e lê-los ou, pior, alterar a página que você recebe ou a informação que envia para o servidor.</p>
+<p>A maioria das explicações resume o HTTPS como um HTTP com o SSL (Secure Sockets Layer) ou, seu sucessor, o TLS (Transport Layer Security). TLS ou SSL são camadas de segurança que fornecem confidencialidade e integridade. No entanto, a autenticação dos sites da web é feita pelos certificados e pela infraestrutura de chaves públicas da Internet. No entanto, neste artigo, abordaremos as questões mais conceituais. A base do TLS/SSL e dos certificados da Internet é a criptografia.</p>
+<p>Para a construção de um website com HTTPS, o administrador do site precisa criar um par de chaves, uma pública e uma privada. Assim, quando um usuário solicita uma conexão com esse site, o servidor envia a sua chave pública para o usuário.</p>
+<p>De posse da chave pública, o usuário pode se comunicar com o servidor, garantindo que todas as mensagens enviadas para o servidor somente serão lidas pelo servidor, pois apenas o servidor possui a chave privada. Basta, para isso, que o navegador do usuário encripte todas as requisições e decripte as respostas recebidas com a chave pública do servidor.</p>
+<p>Dessa forma, garante-se a confidencialidade, pois o usuário tem certeza que apenas o servidor vai receber suas mensagens e que foi o servidor quem enviou aquela mensagem. De fato, o procedimento na prática é mais complexo, pois utilizar o par de chaves assimétricas para a troca de dados demanda muito processamento. Então, no início da conexão, o servidor e o usuário combinam uma chave simétrica única e aleatória para a conexão. Na prática, é a mesma segurança, pois só os dois conhecem a chave simétrica.</p>
+
+<section id="web"></section>
+<h2>WEBSERVER</h2>
+<p>Um web server é um sistema computacional que hospeda e fornece acesso aos conteúdos e aplicações através da internet. Geralmente contratado como um serviço, esse servidor recebe e processa as solicitações feitas por navegadores através de protocolos de rede como o HTTP ou HTTPS.</p>
+<p>Um servidor que presta esse tipo de serviço pode ser um computador físico ou instância de um datacenter, que armazena e disponibiliza o conteúdo para ser acessado por meio da internet.</p>
+<p>Esse acesso geralmente é feito por computadores e dispositivos móveis através de solicitações feitas por browsers, ou seja, softwares navegadores como o Google Chrome e Microsoft Edge.</p>
+<p>Essas solicitações incluem o endereço do conteúdo desejado, como por exemplo uma página HTML, um arquivo de áudio, vídeo ou imagem.</p>
+<p>Os servidores web são responsáveis por hospedar sites, aplicativos, serviços de e-mail, armazenamento em nuvem e outros serviços online.</p>
+
+<section id="eu"></section>
+<h2>O QUE EU APRENDI</h2>
+<p>Neste trabalho, eu configurei os três servidores com o IP correto, depois coloquei o meu site no servidor web e configurei o PC0 para poder aparecer meu site. A princípio não consegui renomear o nome do site no servidor DNS, mas depois coloquei o nome de "servicosderede.com".</p>
+<div class="img">
+<img height="600px" width="1200px" src="AtividadeHardware.png"></div>
+    
+</body>
+</html>

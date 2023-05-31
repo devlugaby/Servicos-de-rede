@@ -1,0 +1,36 @@
+h2{
+    color: mediumpurple;
+}
+
+h1{
+     color:mediumpurple
+}
+
+img{
+   justify-content:space-between;
+}
+
+
+.button {
+    background-color: mediumpurple; 
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.cabecalh0{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align:justify;
+    font-size:medium;
+    background-color:black;
+}
+
+.img{
+    text-align: center;
+}
